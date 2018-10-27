@@ -1,3 +1,15 @@
+'''
+        -- Version 0.2 --
+=================================
+Improvements made by Stephen Bray
+=================================
+
+Built on top of the popular tool XssPy:
+    XssPy - Finding XSS made easier
+    Author: Faizan Ahmad (Fsecurify)
+    Email: fsecurify@gmail.com
+'''
+
 import mechanize
 import sys
 import os
@@ -43,24 +55,6 @@ class color:
     def log(lvl, col, msg):
         logger.log(lvl, col + msg + color.END)
 
-'''
-print color.BOLD + color.RED + """
-XssPy - Finding XSS made easier
-Author: Faizan Ahmad (Fsecurify)
-Email: fsecurify@gmail.com
-Usage: XssPy.py website.com (Not www.website.com OR http://www.website.com)
-       Update: Subdomains are now also valid
-Comprehensive Scan: python XssPy.py -u website.com -e
-Verbose logging: python XssPy.py -u website.com -v
-Cookies: python XssPy.py -u website.complex -c name=val name=val
-Live Results: python XssPy.py -u website.com -l
-
-      -- Hacked Version --
-=================================
-Improvements made by Stephen Bray
-=================================
-""" + color.END
-'''
 logger = logging.getLogger(__name__)
 lh = logging.StreamHandler()  # Handler for the logger
 logger.addHandler(lh)
