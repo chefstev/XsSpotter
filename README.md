@@ -10,6 +10,7 @@ XsSpotter can be used to detect a multitude of common XSS vulnerabilities in web
 After finding a possible vulnerable input, XsSpotter will rank the possibility of exploitability on a scale of high, medium, to low. These inputs will then be printed after testing with the payload used.
 
 XsSpotter also presents a dynamic dashboard with live updates of testing. Any time a vulnerable area is found it will be outputted to the console for immediate testing so there is no need to wait for large sites to finish.
+
  ![alt text](https://github.com/chefstev/XsSpotter/blob/master/XsSpotterDash.png)
 
 ## Usage
